@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css" />
+    <style>
+      .carousel-item {
+        background-image: url(assets/carrousel/Green-leaves-plants-water-drops_1920x1200.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 50vh;
+      }
+      .carousel__item--background2 {
+        background-image: url(assets/carrousel/listya-rasteniya-16066.jpg);
+      }
+
+      .carousel__item--background3 {
+        background-image: url(assets/carrousel/thumb-1920-427274.jpg);
+      }
+      .categorias__imagenes{
+        background-position: center;
+        background-size: cover;
+        height: 10rem;
+        width: 15rem;
+      }
+      .contenedorIMG{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .productos__categorias{
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <script src="./scripts/categoriasRandom.js"></script>
+    <title>Pagina</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="posicion nav">
+        <div class="nav__Logo">
+          <div class="nav__Logo__imagen">
+            <a href="/index.html"
+              ><img src="assets/logopruebas.png" alt="" class="imagen-logo"
+            /></a>
+          </div>
+          <div class="nav__Logo__span">
+            <span class="menu-icon">=</span>
+          </div>
+        </div>
+        <nav class="nav__navegacion">
+          <ul class="nav__navegacion__categoria">
+            <li><a href="/index.html" class="nav__boton"> Inicio </a></li>
+            <li>
+              <a href="/categorias.html" class="nav__boton"> Productos</a>
+            </li>
+            <li><a href="/contacto.html" class="nav__boton"> Contacto </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active"></div>
+          <div class="carousel-item carousel__item--background2"></div>
+          <div class="carousel-item carousel__item--background3"></div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="posicion contenedor">
+        <div class="palabras-iniciales">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos enim
+            libero repudiandae quae vero est ullam porro consequuntur. Laborum a
+            labore consequuntur rerum atque modi maxime nulla accusamus
+            architecto minus! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Eos enim libero repudiandae quae vero est ullam
+            porro consequuntur. Laborum a labore consequuntur rerum atque modi
+            maxime nulla accusamus architecto minus!
+          </p>
+        </div>
+        <div class="productos">
+            <div class="productos__categorias">
+                <div class="productos__categorias" id="producto__categoria1">
+                </div>
+                <div class="productos__categorias" id="producto__categoria2">
+                </div>
+                <div class="productos__categorias" id="producto__categoria3">
+                </div>
+                <div class="productos__categorias" id="producto__categoria4">
+                </div>
+              </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="posicion footer">
+        <ul class="footer__categorias">
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Terminos y Condiciones</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de reembolsos</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de privacidad</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+.contenedor-imagenes{
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    height: 100vh;
+}
+.caja{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    line-height: 0;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.09);
+    transition: all 300ms;
+}
+.caja img{
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: all 300ms;
+}
+.caja span{
+    font-size: 1.7rem;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.caja:hover{
+    flex: 50%;
+}
+
+.caja:hover img{
+    width: 100%;
+    height: 100%;
+}

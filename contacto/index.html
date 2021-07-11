@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/styles/css/style.css" />
+    <style>
+      .carousel-item {
+        background-image: url(assets/carrousel/Green-leaves-plants-water-drops_1920x1200.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 50vh;
+      }
+      .carousel__item--background2 {
+        background-image: url(assets/carrousel/listya-rasteniya-16066.jpg);
+      }
+
+      .carousel__item--background3 {
+        background-image: url(assets/carrousel/thumb-1920-427274.jpg);
+      }
+    </style>
+    <title>Contactanos!</title>
+    <meta name="description" content="Necesitas contactarnos? Puedes hacerlo mediante esta pagina!">
+  </head>
+  <body>
+    <header class="headerNoIndex">
+      <div class="posicion nav">
+        <div class="nav__Logo">
+          <div class="nav__Logo__imagen">
+            <a href="/index.html"
+              ><img src="assets/logopruebas.png" alt="" class="imagen-logo"
+            /></a>
+          </div>
+          <div class="nav__Logo__span">
+            <span class="menu-icon">=</span>
+          </div>
+        </div>
+        <nav class="nav__navegacion">
+          <ul class="nav__navegacion__categoria">
+            <li><a href="/" class="nav__boton"> Inicio </a></li>
+            <li>
+              <a href="./categorias/" class="nav__boton"> Productos</a>
+            </li>
+            <li><a href="./contacto/" class="nav__boton"> Contacto </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="posicion contenedor">
+        <section>
+          <div>
+            <h1>Contacto</h1>
+          </div>
+        </section>
+        <fieldset>
+          <legend>Formulario</legend>
+          <form action="" method="POST">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Escriba su nombre"
+              required
+            />
+            <br />
+            Hombre:
+            <input type="radio" name="Genero" id="Genero" value="Hombre" />
+            Mujer:
+            <input type="radio" name="Genero" id="Genero" value="Mujer" />
+            <br />
+            Mensaje:
+            <br />
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <br />
+            <input type="submit" value="ENVIAR" />
+          </form>
+        </fieldset>
+      </div>
+    </main>
+    <br />
+    <footer>
+      <div class="posicion footer">
+        <ul class="footer__categorias">
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Terminos y Condiciones</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de reembolsos</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de privacidad</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

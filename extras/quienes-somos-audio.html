@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/styles/css/style.css" />
+    <style>
+      .carousel-item {
+        background-image: url(assets/carrousel/Green-leaves-plants-water-drops_1920x1200.jpg);
+        background-position: center;
+        background-size: cover;
+        min-height: 50vh;
+      }
+      .carousel__item--background2 {
+        background-image: url(assets/carrousel/listya-rasteniya-16066.jpg);
+      }
+
+      .carousel__item--background3 {
+        background-image: url(assets/carrousel/thumb-1920-427274.jpg);
+      }
+    </style>
+    <title>Pagina</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="posicion nav">
+        <div class="nav__Logo">
+          <div class="nav__Logo__imagen">
+            <a href="/index.html"
+              ><img src="assets/logopruebas.png" alt="" class="imagen-logo"
+            /></a>
+          </div>
+          <div class="nav__Logo__span">
+            <span class="menu-icon">=</span>
+          </div>
+        </div>
+        <nav class="nav__navegacion">
+          <ul class="nav__navegacion__categoria">
+            <li><a href="/index.html" class="nav__boton"> Inicio </a></li>
+            <li>
+              <a href="/categorias.html" class="nav__boton"> Productos</a>
+            </li>
+            <li><a href="/contacto.html" class="nav__boton"> Contacto </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active"></div>
+          <div class="carousel-item carousel__item--background2"></div>
+          <div class="carousel-item carousel__item--background3"></div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </header>
+      <main class="main">
+        <div class="posicion contenedor">
+          <h2>Quienes somos</h2>
+          <p>¡En este audio veras una pequeña presentacion!</p>
+          <audio src="assets/perfect.mp3" controls></audio>
+          <p>Espero que te haya servido!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, eaque deleniti. Deleniti ratione mollitia quis cumque! Nostrum exercitationem quae velit, iusto nisi pariatur itaque quis nobis beatae possimus laudantium consectetur.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo itaque minima blanditiis, possimus cum consequatur quas inventore facere laudantium, nesciunt porro deleniti consequuntur. Laborum quo provident repudiandae inventore, deleniti iste.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident quia ratione sapiente exercitationem, repellat ea, maiores repellendus distinctio blanditiis placeat accusantium dolore nobis natus nulla velit, dolorem hic nam explicabo!
+          </p>
+        </div>
+      </main>
+      <footer>
+        <div class="posicion footer">
+          <ul class="extras">
+            <li><a href="/quienes-somos-audio.html" class="extra">Quienes somos</a></li>
+            <li><a href="/ayuda.html" class="extra">¿Necesitas ayuda?</a></li>
+            <li><a href="#" class="extra">Que hacemos</a></li>
+          </ul>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="scripts.js"></script>
+  </body>
+</html>

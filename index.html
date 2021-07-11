@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/styles/css/style.css" />
+    <style>
+      .carousel-item {
+        background-image: url(assets/carrousel/Green-leaves-plants-water-drops_1920x1200.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+      }
+      .carousel__item--background2 {
+        background-image: url(assets/carrousel/listya-rasteniya-16066.jpg);
+      }
+
+      .carousel__item--background3 {
+        background-image: url(assets/carrousel/thumb-1920-427274.jpg);
+      }
+      .categorias__imagenes{
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem;
+      }
+      .contenedorIMG{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .productos__categorias{
+        display: flex;
+        flex-direction: column;
+      }
+      .productos__categorias h2{
+        padding: 1rem;
+        padding-left: 0;
+      }
+      .asd{
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 60px;
+        margin: 0 auto;
+        background-color: red;
+        color: white;
+      }
+      @media only screen and (max-width: 600px){
+        .carousel-item{
+          min-height: 40vh;
+        }
+      }
+      @media only screen and (min-width: 601px){
+        .carousel-item{
+          min-height: 30vh;
+        }
+      }
+    </style>
+    <script src="./scripts/categoriasRandom.js"></script>
+    <script src="./scripts/prompt.js"></script>
+    <script src="./scripts/asd.js"></script>
+    <meta name="description" content="¿Buscas algun regalo rapido? ¿Es el dia de las madres y no sabes que regalar? ¿Te gusta la jardineria? Pues este es el lugar! encontraras una variedad tanto de plantas como de macetas"> <!--lo dejo asi por ahora XD-->
+    <meta name="keywords" content="PLANTAS, SALTA, MACETAS, TIENDA, VENTA, FLORES, CACTUS">
+    <title>Pagina Principal</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="posicion nav">
+        <div class="nav__Logo">
+          <div class="nav__Logo__imagen">
+            <a href="/index.html"
+              ><img src="assets/logopruebas.png" alt="" class="imagen-logo"
+            /></a>
+          </div>
+          <div class="nav__Logo__span">
+            <span class="menu-icon">=</span>
+          </div>
+        </div>
+        <nav class="nav__navegacion">
+          <ul class="nav__navegacion__categoria">
+            <li><a href="/" class="nav__boton"> Inicio </a></li>
+            <li>
+              <a href="./categorias/" class="nav__boton"> Productos</a>
+            </li>
+            <li><a href="./contacto/" class="nav__boton"> Contacto </a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active"></div>
+          <div class="carousel-item carousel__item--background2"></div>
+          <div class="carousel-item carousel__item--background3"></div>
+        </div>
+
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <div class="posicion contenedor">
+        <div class="productos">
+          <div class="productos__categorias">
+              <div class="productos__categorias" id="producto__categoria1">
+              </div>
+              <div class="productos__categorias" id="producto__categoria2">
+              </div>
+              <div class="productos__categorias" id="producto__categoria3">
+              </div>
+              <div class="productos__categorias" id="producto__categoria4">
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="posicion footer">
+        <ul class="footer__categorias">
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Terminos y Condiciones</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de reembolsos</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de privacidad</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
