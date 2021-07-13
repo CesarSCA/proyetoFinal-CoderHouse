@@ -27,8 +27,7 @@ body {
   font-size: 1.5rem;
   line-height: 1.7em;
   margin: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#eeeeee));
-  background-image: linear-gradient(180deg, white, #eeeeee);
+  background: #f1f7f1;
 }
 
 /*POSICION GENERAL*/
@@ -378,6 +377,15 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header .nav .nav__navegacion.show .nav__navegacion__categoria .nav__boton {
+    margin-right: 0;
+    margin-left: 1rem;
+    background: rgba(245, 245, 245, 0.247);
+    border-color: #b9ccb9;
+    border-radius: 10px;
+    border-width: 10px;
+    color: #444444;
+  }
   .header .nav .nav__navegacion.unshow {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -489,13 +497,15 @@ a:hover {
   transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
   border-radius: 1rem;
   position: relative;
-  height: 17rem;
-  width: 15rem;
+  height: 47vh;
+  width: 30%;
+  max-width: 240px;
+  max-height: 272px;
 }
 
 .contenedor .caja__imagenes:hover {
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -529,8 +539,8 @@ a:hover {
 .contenedor .caja__imagenes:hover span {
   display: block;
   position: absolute;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   z-index: -1;
   width: 100%;
   background: white;
@@ -545,8 +555,8 @@ a:hover {
           animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
 }

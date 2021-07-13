@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
     let numero = 1
-    var a = ["Cactus","Interior","Exterior","Jardin","Trepaderas","Aquaticas"]
+    var a = ["Cactus","Interior","Exterior","Jardin","Trepaderas","Aquaticas", "Masetas"]
     var res = a.sort(function() {
     return 0.5 - Math.random();
     });
@@ -18,10 +18,13 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 document.getElementById(`categoria__Cactus${i}`).style.backgroundImage = `url(assets/categorias/Cactus/cactus${i}.jpg)`
             }
-        } else if(seleccionadas[index] == "Interior"){
-            for (let i = 1; i < 4; i++) {
-                document.getElementById(`categoria__Interior${i}`).style.backgroundImage = `url(assets/categorias/plantasPequeñas/planta${i}.jpg)`
-            }
+        // } else if(seleccionadas[index] == "Masetas"){
+        //     for (let i = 1; i < 4; i++) {
+        //         let dsa = Math.floor((Math.random() * 18) + 1);
+        //         var asd = `url(assets/categorias/Masetas/masetas((${(dsa)})).jpg)`
+        //         console.log(asd)
+        //         document.getElementById(`categoria__Masetas${i}`).style.backgroundImage = asd
+        //     }
         } else {
             for (let i = 1; i < 4; i++) {
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundColor = `rgba(217, 227, 236, 0.952)`
@@ -30,7 +33,7 @@ window.addEventListener("load", function() {
         numero++
 
 
-        
+
     }
 })
 

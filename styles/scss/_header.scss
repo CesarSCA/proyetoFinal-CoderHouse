@@ -143,6 +143,15 @@
                     justify-content: space-around;
                     flex-direction: row;
                     align-items: center;
+                    .nav__boton{
+                        margin-right: 0;
+                        margin-left: 1rem;
+                        background: rgba(245, 245, 245, 0.247);
+                        border-color: #b9ccb9;
+                        border-radius: 10px;
+                        border-width: 10px;
+                        color: rgb(68, 68, 68);
+                    }
                 }
             }
             .nav__navegacion.unshow{
@@ -192,6 +201,7 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+
             }
         }
     }
