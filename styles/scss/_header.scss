@@ -34,6 +34,7 @@
                 padding: 1rem;
                 color: whitesmoke;
                 font-size: 1.8rem;
+                display: flex;
 
                 position: relative;
             }
@@ -54,6 +55,7 @@
             .nav__boton:hover:after{
                 transform: scale(1,1);
             }
+            
         }
 
     }

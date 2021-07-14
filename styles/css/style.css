@@ -42,7 +42,7 @@ a:hover {
   text-decoration: none;
 }
 
-.header a:hover {
+.header a {
   color: whitesmoke !important;
   text-decoration: none;
 }
@@ -205,6 +205,9 @@ a:hover {
   padding: 1rem;
   color: whitesmoke;
   font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
 }
 
@@ -483,6 +486,17 @@ a:hover {
   border-radius: 2rem;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor .productos__categorias h2 {
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.contenedor .productos__categorias .vermas {
+  padding: 1rem;
+  padding-left: 0;
+  font-size: 1.3rem;
 }
 
 .contenedor .caja__imagenes {

@@ -47,18 +47,10 @@
         display: flex;
         flex-direction: column;
       }
-      .productos__categorias h2{
-        padding: 1rem;
-        padding-left: 0;
+      .presentacion{
+        text-align: center;
       }
-      .asd{
-        min-width: 200px;
-        max-width: 200px;
-        min-height: 60px;
-        margin: 0 auto;
-        background-color: red;
-        color: white;
-      }
+
       @media only screen and (max-width: 600px){
         .carousel-item{
           min-height: 40vh;
@@ -79,7 +71,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="posicion nav">
+      <div class="posicion nav" >
         <div class="nav__Logo">
           <div class="nav__Logo__imagen">
             <a href="/index.html"
@@ -92,16 +84,14 @@
         </div>
         <nav class="nav__navegacion">
           <ul class="nav__navegacion__categoria">
-            <li>
-
-              <a href="/" class="nav__boton"> Inicio </a>
+            <li >
+              <a href="/"class="nav__boton" > Inicio </a>
+            </li>
+            <li >
+              <a href="./categorias/" class="nav__boton" > Productos</a>
             </li>
             <li>
-              <a href="./categorias/" class="nav__boton"> Productos</a>
-            </li>
-            <li>
-              <img src="./assets/iconos/sobre.svg" alt="" style="width: 40px; height: 30px; color: green" >
-              <a href="./contacto/" class="nav__boton"> Contacto </a>
+              <a href="./contacto/"  class="nav__boton" > Contacto </a>
             </li>
           </ul>
         </nav>
@@ -129,6 +119,11 @@
     </header>
     <main class="main">
       <div class="posicion contenedor">
+        <div class="presentacion">
+          <h1>Nombre de la empresa</h1>
+          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus eaque cum ad blanditiis atque, quidem corporis ab quibusdam eos porro quo ipsam, laborum suscipit quaerat, eius autem deleniti natus.
+          </p>
+        </div>
         <div class="productos">
           <div class="productos__categorias">
               <div class="productos__categorias" id="producto__categoria1">
