@@ -1,0 +1,11 @@
+#contenedorSubCat{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+@for $i from 1 through 19 {
+    #imagen#{$i}{
+        background-image: url("../../assets/categorias/PlantasInterior/interior\(#{$i}\).jpg");
+    }
+}

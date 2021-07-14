@@ -750,4 +750,90 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+
+#contenedorSubCat {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+#imagen1 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(1).jpg");
+}
+
+#imagen2 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(2).jpg");
+}
+
+#imagen3 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(3).jpg");
+}
+
+#imagen4 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(4).jpg");
+}
+
+#imagen5 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(5).jpg");
+}
+
+#imagen6 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(6).jpg");
+}
+
+#imagen7 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(7).jpg");
+}
+
+#imagen8 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(8).jpg");
+}
+
+#imagen9 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(9).jpg");
+}
+
+#imagen10 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(10).jpg");
+}
+
+#imagen11 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(11).jpg");
+}
+
+#imagen12 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(12).jpg");
+}
+
+#imagen13 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(13).jpg");
+}
+
+#imagen14 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(14).jpg");
+}
+
+#imagen15 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(15).jpg");
+}
+
+#imagen16 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(16).jpg");
+}
+
+#imagen17 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(17).jpg");
+}
+
+#imagen18 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(18).jpg");
+}
+
+#imagen19 {
+  background-image: url("../../assets/categorias/PlantasInterior/interior(19).jpg");
+}
 /*# sourceMappingURL=style.css.map */

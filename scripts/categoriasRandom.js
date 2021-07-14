@@ -38,7 +38,7 @@ window.addEventListener("load", function() {
             }
         } else if(seleccionadas[index] == "Interior"){
             for (let i = 1; i < 4; i++) {
-                let dsa = Math.floor((Math.random() * 38) + 1);
+                let dsa = Math.floor((Math.random() * 18) + 1);
                 document.getElementById(`categoria__Interior${i}`).style.backgroundImage = `url(\"./assets/categorias/PlantasInterior/interior(${dsa}).jpg\")`
             }
         } else if(seleccionadas[index] == "Suculentas"){
