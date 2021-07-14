@@ -1,6 +1,6 @@
 window.addEventListener("load", function() {
     let numero = 1
-    var a = ["Accesorios", "Masetas", "Exterior", "Interior", "Suculentas"]
+    var a = ["Accesorios", "Macetas", "Exterior", "Interior", "Suculentas"]
     var res = a.sort(function() {
     return 0.5 - Math.random();
     });
@@ -21,10 +21,10 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 document.getElementById(`categoria__Cactus${i}`).style.backgroundImage = `url(assets/categorias/Cactus/cactus${i}.jpg)`
             }
-        } else if(seleccionadas[index] == "Masetas"){
+        } else if(seleccionadas[index] == "Macetas"){
             for (let i = 1; i < 4; i++) {
                 let dsa = Math.floor((Math.random() * 18) + 1);
-                document.getElementById(`categoria__Masetas${i}`).style.backgroundImage = `url(\"./assets/categorias/Masetas/masetas(${dsa}).jpg\")`
+                document.getElementById(`categoria__Macetas${i}`).style.backgroundImage = `url(\"./assets/categorias/Macetas/macetas(${dsa}).jpg\")`
             }
         } else if(seleccionadas[index] == "Accesorios"){
             for (let i = 1; i < 4; i++) {
