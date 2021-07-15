@@ -19,13 +19,21 @@
     <link rel="stylesheet" href="../styles/css/style.css" />
     <title>Contactanos!</title>
     <meta name="description" content="Necesitas contactarnos? Puedes hacerlo mediante esta pagina!">
+    <style>
+      .medios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+      }
+    </style>
   </head>
   <body>
     <header class="headerNoIndex">
       <div class="posicion nav">
         <div class="nav__Logo">
           <div class="nav__Logo__imagen">
-            <a href="/index.html"
+            <a href="../index.html"
               ><img src="assets/logopruebas.png" alt="" class="imagen-logo"
             /></a>
           </div>
@@ -35,11 +43,11 @@
         </div>
         <nav class="nav__navegacion">
           <ul class="nav__navegacion__categoria">
-            <li><a href="/" class="nav__boton"> Inicio </a></li>
+            <li><a href="../index.html" class="nav__boton"> Inicio </a></li>
             <li>
-              <a href="./categorias/" class="nav__boton"> Productos</a>
+              <a href="../categorias/index.html" class="nav__boton"> Productos</a>
             </li>
-            <li><a href="./contacto/" class="nav__boton"> Contacto </a></li>
+            <li><a href="index.html" class="nav__boton"> Contacto </a></li>
           </ul>
         </nav>
       </div>
@@ -51,6 +59,26 @@
             <h1>Contacto</h1>
           </div>
         </section>
+        <div class="contacto">
+          <div class="conTexto">
+            <p>Deseas contactarnos? Puedes hacerlo por los siguientes medios!</p>
+            <div class="medios">
+              <div class="whats">
+                <p class="contacto__titulo">Whatsapp</p>
+                <a href="#">387 555 333 000</a>
+              </div>
+              <div class="faceb">
+                <p class="contacto__titulo">Facebook</p>
+                <a href="#">El Eden - Pagina</a>
+              </div>
+              <div class="email">
+                <p class="contacto__titulo">Email</p>
+                <a href="#">eleden@gmail.com</a>
+              </div>
+            </div>
+            <p>O puedes enviarnos un mensaje por aqui!</p>
+          </div>
+        </div>
         <fieldset>
           <legend>Formulario</legend>
           <form action="" method="POST">
@@ -62,11 +90,6 @@
               placeholder="Escriba su nombre"
               required
             />
-            <br />
-            Hombre:
-            <input type="radio" name="Genero" id="Genero" value="Hombre" />
-            Mujer:
-            <input type="radio" name="Genero" id="Genero" value="Mujer" />
             <br />
             Mensaje:
             <br />
