@@ -10,15 +10,22 @@
         font-size: 80px;
         line-height: 1;
         margin-bottom: 0;
+        text-align: center;
     }
     .subtitulo{
         font-family: 'Italianno', cursive;
         font-size: 40px;
         margin-bottom: 2rem;
+        text-align: center;
     }
     .texto{
         margin-bottom: 2rem;
         line-height: 1.4;
+        text-align: start;
+    }
+    .resaltado{
+        color: green;
+        margin-bottom: 0.5rem;
     }
     .productos__categorias h2{
         padding: 1rem;
@@ -72,7 +79,6 @@
         padding-top: 3rem;
         transform: translate(0, -2.5rem);
         border-radius: 1rem;
-        padding-left: 2rem;
         animation-name: bbajar;
         animation-iteration-count: 1;
         animation-timing-function: ease-in;
@@ -90,9 +96,18 @@
     .texto{
         font-size: 15px;
     }
+    .caja__imagenes:hover .precioNombre{
+        padding-left: 0.9rem;
+        font-size: 20px;
+        line-height: 1.6rem;
+    }
+    
 }
 @media only screen and (min-width: 601px){
     .texto{
         font-size: 25px;
+    }
+    .caja__imagenes:hover .precioNombre{
+        padding-left: 2rem;
     }
 }

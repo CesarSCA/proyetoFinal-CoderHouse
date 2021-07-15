@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
          
         if(seleccionadas[index] == "Macetas"){
             var asd = []
-            for (let num = 1; num < 12; num++){
+            for (let num = 1; num < 21; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -31,9 +31,9 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/Macetas/macetas(${numeros[total]}).jpg\")`
-                // var nombres = ["Cyperus papyrus", "Rosa", "Petunia", "Flor de azucar", "Geranio", "Damasquina", "Damasquina", "Vacio", "Alisum", "Lavanda", "Ledebouria"]
-                // var precios = ["$990","$600", "$120", "$100", "$150", "$90", "$90", "$0", "$50", "$500", "$0"]
-                // for (let ind = 1; ind < 12; ind++) {
+                // var nombres = []
+                // var precios = []
+                // for (let ind = 1; ind < 21; ind++) {
                 //     if(ind == numeros[total]){
                 //         var total2 = numeros[total] - 1
                 //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
@@ -43,7 +43,7 @@ window.addEventListener("load", function() {
             }
         } else if(seleccionadas[index] == "Accesorios"){
             var asd = []
-            for (let num = 1; num < 12; num++){
+            for (let num = 1; num < 20; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -54,9 +54,9 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/Accesorios/accesorios(${numeros[total]}).webp\")`
-                // var nombres = ["Cyperus papyrus", "Rosa", "Petunia", "Flor de azucar", "Geranio", "Damasquina", "Damasquina", "Vacio", "Alisum", "Lavanda", "Ledebouria"]
-                // var precios = ["$990","$600", "$120", "$100", "$150", "$90", "$90", "$0", "$50", "$500", "$0"]
-                // for (let ind = 1; ind < 12; ind++) {
+                // var nombres = []
+                // var precios = []
+                // for (let ind = 1; ind < 20; ind++) {
                 //     if(ind == numeros[total]){
                 //         var total2 = numeros[total] - 1
                 //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
@@ -89,7 +89,7 @@ window.addEventListener("load", function() {
             }
         } else if(seleccionadas[index] == "Interior"){
             var asd = []
-            for (let num = 1; num < 12; num++){
+            for (let num = 1; num < 20; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -100,9 +100,9 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/PlantasInterior/interior(${numeros[total]}).jpg\")`
-                // var nombres = ["Cyperus papyrus", "Rosa", "Petunia", "Flor de azucar", "Geranio", "Damasquina", "Damasquina", "Vacio", "Alisum", "Lavanda", "Ledebouria"]
-                // var precios = ["$990","$600", "$120", "$100", "$150", "$90", "$90", "$0", "$50", "$500", "$0"]
-                // for (let ind = 1; ind < 12; ind++) {
+                // var nombres = []
+                // var precios = []
+                // for (let ind = 1; ind < 20; ind++) {
                 //     if(ind == numeros[total]){
                 //         var total2 = numeros[total] - 1
                 //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
@@ -112,7 +112,7 @@ window.addEventListener("load", function() {
             }
         } else if(seleccionadas[index] == "Suculentas"){
             var asd = []
-            for (let num = 1; num < 12; num++){
+            for (let num = 1; num < 23; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -123,9 +123,9 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/Suculentas/suculentas(${numeros[total]}).jpg\")`
-                // var nombres = ["Cyperus papyrus", "Rosa", "Petunia", "Flor de azucar", "Geranio", "Damasquina", "Damasquina", "Vacio", "Alisum", "Lavanda", "Ledebouria"]
-                // var precios = ["$990","$600", "$120", "$100", "$150", "$90", "$90", "$0", "$50", "$500", "$0"]
-                // for (let ind = 1; ind < 12; ind++) {
+                // var nombres = []
+                // var precios = []
+                // for (let ind = 1; ind < 23; ind++) {
                 //     if(ind == numeros[total]){
                 //         var total2 = numeros[total] - 1
                 //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 

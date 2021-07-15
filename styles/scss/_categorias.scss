@@ -1,57 +1,4 @@
-.headerNoIndex {
-    color: $navColorNoIndex;
-    $ejemplo: 3rem;
-    position: relative;
-    .nav{
-        padding-top: $ejemplo/2;
-        .imagen-logo{
-            width: 100px;
-        }
-        .imagen-logo:hover{
-            animation-name: ejemplo;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in;
-            animation-duration: 3s;
-            animation-delay: 0s;
-        }
-        @keyframes ejemplo{
-            0%{ transform: rotate(0deg);}
-            100%{ transform: rotate(360deg);}
-        }
-        .menu-icon{
-            color: $navColorNoIndex;
-        }
-        .nav__navegacion{
-            display: flex;
-            justify-content: space-between;
-            .nav__boton{
-                margin-right: 1rem;
-                padding: 1rem;
-                color: $navColorNoIndex;
-                font-size: 1.8rem;
 
-                position: relative;
-            }
-            .nav__boton:after{
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 0.175rem;
-                background: $navColorNoIndex;
-                left: 0;
-                bottom: 0;
-                
-            }
-            .nav__boton:after{
-                transform: scale(0, 1);
-                transition: transform 0.3s ease;
-            }
-            .nav__boton:hover:after{
-                transform: scale(1,1);
-            }
-        }
-    }
-}
 .categorias a:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     -webkit-transform: scale(1.1);
@@ -60,12 +7,7 @@
 .h2-categoria{
     margin-bottom: 3rem;
 }
-.categorias{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1.5rem;
-}
+
 .categorias a{
     color: slategrey;
     border-radius: 30px;
@@ -78,4 +20,25 @@
     -webkit-transition-property: box-shadow, transform;
     transition-property: box-shadow, transform;
     text-align: center;
+    align-self: center;
+}
+@media only screen and (max-width: 600px){
+.categorias{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: auto;
+    gap: 1rem;
+    
+}
+.categorias a{
+    padding: 2rem;
+}
+}
+@media only screen and (min-width: 601px){
+    .categorias{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+    }
 }

@@ -66,6 +66,61 @@
         border-radius: 0.5rem;
     }
 }
+.headerNoIndex {
+    color: $navColorNoIndex;
+    $ejemplo: 3rem;
+    position: relative;
+    .nav{
+        padding-top: $ejemplo/2;
+        .imagen-logo{
+            width: 100px;
+            margin-left: 2rem;
+        }
+        .imagen-logo:hover{
+            animation-name: ejemplo;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration: 3s;
+            animation-delay: 0s;
+        }
+        @keyframes ejemplo{
+            0%{ transform: rotate(0deg);}
+            100%{ transform: rotate(360deg);}
+        }
+        .menu-icon{
+            color: $navColorNoIndex;
+        }
+        .nav__navegacion{
+            display: flex;
+            justify-content: space-between;
+            .nav__boton{
+                margin-right: 1rem;
+                padding: 1rem;
+                color: $navColorNoIndex;
+                font-size: 1.8rem;
+
+                position: relative;
+            }
+            .nav__boton:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 0.175rem;
+                background: $navColorNoIndex;
+                left: 0;
+                bottom: 0;
+                
+            }
+            .nav__boton:after{
+                transform: scale(0, 1);
+                transition: transform 0.3s ease;
+            }
+            .nav__boton:hover:after{
+                transform: scale(1,1);
+            }
+        }
+    }
+}
 
 
 
@@ -131,7 +186,6 @@
             .nav__navegacion.show{
                 display: flex;
                 position: absolute;
-                background-color: darkseagreen;
                 width: 100%;
                 height: 40vh;
                 animation-name: bajar;
@@ -140,19 +194,19 @@
                 animation-duration: 1s;
                 animation-delay: 0s;
                 border-radius: 0.5rem;
+                background-color: darkseagreen;
                 .nav__navegacion__categoria{
                     display: flex;
                     justify-content: space-around;
-                    flex-direction: row;
-                    align-items: center;
+                    flex-direction: column;
+                    align-items:flex-start;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
                     .nav__boton{
                         margin-right: 0;
-                        margin-left: 1rem;
-                        background: rgba(245, 245, 245, 0.247);
-                        border-color: #b9ccb9;
-                        border-radius: 10px;
-                        border-width: 10px;
-                        color: rgb(68, 68, 68);
+                        margin-left: 2rem;
+                        padding: 0;
+                        
                     }
                 }
             }
@@ -171,11 +225,19 @@
                 .nav__navegacion__categoria{
                     display: flex;
                     justify-content: space-around;
-                    flex-direction: row;
-                    align-items: center;
+                    flex-direction: column;
+                    align-items:flex-start;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    .nav__boton{
+                        margin-right: 0;
+                        margin-left: 2rem;
+                        padding: 0;
+                    }
                 }
             }
         }
+
         .carousel{
             width: 100%;
             margin: 0 auto;
@@ -183,6 +245,117 @@
             border-radius: 0.5rem;
         }
     }
+    .headerNoIndex{
+        display: relative;
+        .posicion{
+            width: 100%;
+            max-width: 70rem;
+            margin: 0 auto;
+        }
+        .nav{
+            display: flex;
+            flex-direction: column;
+            padding-top: 0;
+            .nav__Logo{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 1.5rem;
+                .nav__Logo__span{
+                    transform: translate(0);
+                    transition: all 2s;
+                    z-index: 1;
+                    .menu-icon{
+                        text-align: center;
+                        margin-right: 2rem;
+                        display: block;
+                        cursor: pointer;
+                        font-size: 4rem;
+                    }
+                }
+                .nav__Logo__span.mover{
+                    transform: translate(0, 15vh);
+                    transition: all 2s;
+                    z-index: 1;
+                }
+            }
+            @keyframes bajar {
+                from{
+                    transform: translate(0, -40vh);
+                }
+                to{
+                    transform: translate(0, 0);
+                }
+            }
+            @keyframes subir {
+                from{
+                    display: flex;
+                    transform: translate(0,0);
+                }
+                to{
+                    transform: translate(0, -40vh);
+                }
+            }
+            .nav__navegacion{
+                display: none;
+            }
+            .nav__navegacion.show{
+                display: flex;
+                position: absolute;
+                width: 100%;
+                height: 40vh;
+                animation-name: bajar;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: 1s;
+                animation-delay: 0s;
+                border-radius: 0.5rem;
+                background-color: darkseagreen;
+                .nav__navegacion__categoria{
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items:flex-start;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    .nav__boton{
+                        margin-right: 0;
+                        margin-left: 2rem;
+                        padding: 0;
+                        
+                        
+                    }
+                }
+            }
+            .nav__navegacion.unshow{
+                display: flex;
+                position: absolute;
+                background-color: darkseagreen;
+                width: 100%;
+                height: 40vh;
+                animation-name: subir;
+                animation-iteration-count: 1;
+                animation-timing-function: ease-in;
+                animation-duration: 1s;
+                animation-delay: 0s;
+                border-radius: 0.5rem;
+                .nav__navegacion__categoria{
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    align-items:flex-start;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    .nav__boton{
+                        margin-right: 0;
+                        margin-left: 2rem;
+                        padding: 0;
+                        
+                    }
+                }
+            }
+        }
+}
 }
 
 @media only screen and (min-width: 601px) {
