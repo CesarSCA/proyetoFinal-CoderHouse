@@ -6,6 +6,20 @@
     background: white;
     border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .titulo{
+        font-size: 80px;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+    .subtitulo{
+        font-family: 'Italianno', cursive;
+        font-size: 40px;
+        margin-bottom: 2rem;
+    }
+    .texto{
+        margin-bottom: 2rem;
+        line-height: 1.4;
+    }
     .productos__categorias h2{
         padding: 1rem;
         padding-left: 0;
@@ -33,9 +47,10 @@
         box-shadow: 0 0 20px rgba(0,0,0,0.3);
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+        z-index: 2;
     }
     .caja__imagenes{
-        span{
+        .precioNombre{
             display: none;
         }
     }
@@ -47,8 +62,8 @@
             transform: translate(0, -2.5rem);
         }
     }
-    .caja__imagenes:hover span{
-        display: block;
+    .caja__imagenes:hover .precioNombre{
+        display: flex;
         position: absolute;
         box-shadow: 0 0 20px rgba(0,0,0,0.3);
         z-index: -1;
@@ -63,8 +78,21 @@
         animation-timing-function: ease-in;
         animation-duration: 0.3s;
         animation-delay: 0s;
+        flex-direction: column;
+
     }
     .caja__imagenes:hover .categorias__imagenes{
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .texto{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 601px){
+    .texto{
+        font-size: 25px;
     }
 }

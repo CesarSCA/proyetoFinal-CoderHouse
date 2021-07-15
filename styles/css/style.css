@@ -488,6 +488,23 @@ a:hover {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.contenedor .titulo {
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.contenedor .subtitulo {
+  font-family: 'Italianno', cursive;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.contenedor .texto {
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
 .contenedor .productos__categorias h2 {
   padding: 1rem;
   padding-left: 0;
@@ -522,9 +539,10 @@ a:hover {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  z-index: 2;
 }
 
-.contenedor .caja__imagenes span {
+.contenedor .caja__imagenes .precioNombre {
   display: none;
 }
 
@@ -550,8 +568,10 @@ a:hover {
   }
 }
 
-.contenedor .caja__imagenes:hover span {
-  display: block;
+.contenedor .caja__imagenes:hover .precioNombre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -573,11 +593,27 @@ a:hover {
           animation-duration: 0.3s;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contenedor .caja__imagenes:hover .categorias__imagenes {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+  .texto {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .texto {
+    font-size: 25px;
+  }
 }
 
 .headerNoIndex {
