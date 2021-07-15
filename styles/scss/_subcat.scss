@@ -19,7 +19,27 @@
     }
 }
 @for $i from 1 through 19 {
-    #imagen#{$i}{
+    #imagenInt#{$i}{
         background-image: url("../../assets/categorias/PlantasInterior/interior\(#{$i}\).jpg");
+    }
+}
+@for $i from 1 through 17 {
+    #imagenAcc#{$i}{
+        background-image: url("../../assets/categorias/Accesorios/accesorios\(#{$i}\).webp");
+    }
+}
+@for $i from 1 through 15 {
+    #imagenMac#{$i}{
+        background-image: url("../../assets/categorias/Macetas/macetas\(#{$i}\).jpg");
+    }
+}
+@for $i from 1 through 18 {
+    #imagenSuc#{$i}{
+        background-image: url("../../assets/categorias/Suculentas/suculentas\(#{$i}\).jpg");
+    }
+}
+@for $i from 1 through 11 {
+    #imagenExt#{$i}{
+        background-image: url("../../assets/categorias/PlantasExterior/exterior\(#{$i}\).jpg");
     }
 }

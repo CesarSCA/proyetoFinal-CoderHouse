@@ -20,7 +20,7 @@ window.addEventListener("load", function() {
          
         if(seleccionadas[index] == "Macetas"){
             var asd = []
-            for (let num = 1; num < 21; num++){
+            for (let num = 1; num < 16; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -31,19 +31,19 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/Macetas/macetas(${numeros[total]}).jpg\")`
-                // var nombres = []
-                // var precios = []
-                // for (let ind = 1; ind < 21; ind++) {
-                //     if(ind == numeros[total]){
-                //         var total2 = numeros[total] - 1
-                //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
-                //         document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
-                //     }
-                // }
+                var nombres = ["Maceta ceramica tortuga", "Maceta ceramica oso panda", "Maceta ceramica", "Maceta ceramica cactus", "Maceta ceramica llama", "Maceta tronco", "Maceta plastica", "Maceta tronco", "Pack de macetas plasticas", "Pack de macetas plasticas", "Maceta ceramica perro", "Maceta ceramica zorro", "Maceta ceramica perro", "Maceta ceramica cisne", "Maceta ceramica "]
+                var precios = ["$500", "$450", "$320", "$400", "$550", "$300", "$100", "$300", "$280", "$380", "$400", "$400", "$420", "$520", "c/u $450"]
+                for (let ind = 1; ind < 16; ind++) {
+                    if(ind == numeros[total]){
+                        var total2 = numeros[total] - 1
+                        document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
+                        document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
+                    }
+                }
             }
         } else if(seleccionadas[index] == "Accesorios"){
             var asd = []
-            for (let num = 1; num < 20; num++){
+            for (let num = 1; num < 18; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -54,15 +54,15 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/Accesorios/accesorios(${numeros[total]}).webp\")`
-                // var nombres = []
-                // var precios = []
-                // for (let ind = 1; ind < 20; ind++) {
-                //     if(ind == numeros[total]){
-                //         var total2 = numeros[total] - 1
-                //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
-                //         document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
-                //     }
-                // }
+                var nombres = ["Sustrato", "Alimento organico", "Maceta plastica", "Pack de jardineria", "Fertilizante perlita", "Kit de jardineria", "Fertilizante perlita", "Pistola de riego", "Sustrato poroso", "Utensillos de jardineria", "Tijera de podar", "Piedritas para suculentas", "Piedritas para suculentas", "Perlita para plantas", "Piedritas para suculentas", "Sapito regador", "Manguera"]
+                var precios = ["$890", "$280", "$100", "$5800", "$200", "$2800", "$250", "$290", "$280", "$810", "$975", "c/u $110", "c/u $110", "$250", "$100", "$199", "$1800"]
+                for (let ind = 1; ind < 18; ind++) {
+                    if(ind == numeros[total]){
+                        var total2 = numeros[total] - 1
+                        document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
+                        document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
+                    }
+                }
             }
         } else if(seleccionadas[index] == "Exterior"){
             var asd = []
@@ -89,7 +89,7 @@ window.addEventListener("load", function() {
             }
         } else if(seleccionadas[index] == "Interior"){
             var asd = []
-            for (let num = 1; num < 20; num++){
+            for (let num = 1; num < 18; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -100,19 +100,19 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/PlantasInterior/interior(${numeros[total]}).jpg\")`
-                // var nombres = []
-                // var precios = []
-                // for (let ind = 1; ind < 20; ind++) {
-                //     if(ind == numeros[total]){
-                //         var total2 = numeros[total] - 1
-                //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
-                //         document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
-                //     }
-                // }
+                var nombres = ["Dolar dorado", "Lechero rojo", "Dolar negro", "Cretona", "Dolar matizado", "Cretona", "Hiedra matizada", "Helecho", "Begonia ala de angel", "Begonia brasilera", "Diplanemia Tropic", "Singonio", "Cretona", "Potus", "Begonia erythrophylla", "Iresine", "Sansevieria amarilla"]
+                var precios = ["$200", "$200", "$200", "$150", "$200", "$200", "$300", "$500", "$600", "$600", "$800", "$400", "$200", "$450", "$800", "$450", "$800"]
+                for (let ind = 1; ind < 18; ind++) {
+                    if(ind == numeros[total]){
+                        var total2 = numeros[total] - 1
+                        document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
+                        document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
+                    }
+                }
             }
         } else if(seleccionadas[index] == "Suculentas"){
             var asd = []
-            for (let num = 1; num < 23; num++){
+            for (let num = 1; num < 19; num++){
                     asd.push(num)
             }
             var rest = asd.sort(function() {
@@ -123,15 +123,15 @@ window.addEventListener("load", function() {
             for (let i = 1; i < 4; i++) {
                 var total = i - 1
                 document.getElementById(`categoria__${seleccionadas[index]}${i}`).style.backgroundImage = `url(\"./assets/categorias/Suculentas/suculentas(${numeros[total]}).jpg\")`
-                // var nombres = []
-                // var precios = []
-                // for (let ind = 1; ind < 23; ind++) {
-                //     if(ind == numeros[total]){
-                //         var total2 = numeros[total] - 1
-                //         document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
-                //         document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
-                //     }
-                // }
+                var nombres = ["Cactus de navidad", "Crassula capitella", "Echeveria elegans", "Echeveria laui", "Kalanchoe pinnata", "Pilea", "Sedum morganianum", "Sedum nussbaumerianum", "Sedum rubrotinctum", "Crassula perforata", "Aptenia cordifolia", "Portulaca grandiflora", "Cactus opuntia", "Sedum dasyphyllum", "Cactus", "Sedum palmeri", "Crassula ovata", "Cactus opuntia",]
+                var precios = ["$500", "$250", "$420", "$150", "$700", "$1000", "$300", "$200", "$200", "$250", "$120", "$150", "$350", "$100", "$400", "$150", "$250", "$350"]
+                for (let ind = 1; ind < 19; ind++) {
+                    if(ind == numeros[total]){
+                        var total2 = numeros[total] - 1
+                        document.getElementById(`nombre__${seleccionadas[index]}${i}`).innerHTML=`${nombres[total2]}` 
+                        document.getElementById(`precio__${seleccionadas[index]}${i}`).innerHTML=`${precios[total2]}` 
+                    }
+                }
             }
         }
         else {

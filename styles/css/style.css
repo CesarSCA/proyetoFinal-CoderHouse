@@ -1015,79 +1015,323 @@ a:hover {
   }
 }
 
-#imagen1 {
+#imagenInt1 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(1).jpg");
 }
 
-#imagen2 {
+#imagenInt2 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(2).jpg");
 }
 
-#imagen3 {
+#imagenInt3 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(3).jpg");
 }
 
-#imagen4 {
+#imagenInt4 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(4).jpg");
 }
 
-#imagen5 {
+#imagenInt5 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(5).jpg");
 }
 
-#imagen6 {
+#imagenInt6 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(6).jpg");
 }
 
-#imagen7 {
+#imagenInt7 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(7).jpg");
 }
 
-#imagen8 {
+#imagenInt8 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(8).jpg");
 }
 
-#imagen9 {
+#imagenInt9 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(9).jpg");
 }
 
-#imagen10 {
+#imagenInt10 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(10).jpg");
 }
 
-#imagen11 {
+#imagenInt11 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(11).jpg");
 }
 
-#imagen12 {
+#imagenInt12 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(12).jpg");
 }
 
-#imagen13 {
+#imagenInt13 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(13).jpg");
 }
 
-#imagen14 {
+#imagenInt14 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(14).jpg");
 }
 
-#imagen15 {
+#imagenInt15 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(15).jpg");
 }
 
-#imagen16 {
+#imagenInt16 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(16).jpg");
 }
 
-#imagen17 {
+#imagenInt17 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(17).jpg");
 }
 
-#imagen18 {
+#imagenInt18 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(18).jpg");
 }
 
-#imagen19 {
+#imagenInt19 {
   background-image: url("../../assets/categorias/PlantasInterior/interior(19).jpg");
+}
+
+#imagenAcc1 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(1).webp");
+}
+
+#imagenAcc2 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(2).webp");
+}
+
+#imagenAcc3 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(3).webp");
+}
+
+#imagenAcc4 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(4).webp");
+}
+
+#imagenAcc5 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(5).webp");
+}
+
+#imagenAcc6 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(6).webp");
+}
+
+#imagenAcc7 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(7).webp");
+}
+
+#imagenAcc8 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(8).webp");
+}
+
+#imagenAcc9 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(9).webp");
+}
+
+#imagenAcc10 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(10).webp");
+}
+
+#imagenAcc11 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(11).webp");
+}
+
+#imagenAcc12 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(12).webp");
+}
+
+#imagenAcc13 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(13).webp");
+}
+
+#imagenAcc14 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(14).webp");
+}
+
+#imagenAcc15 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(15).webp");
+}
+
+#imagenAcc16 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(16).webp");
+}
+
+#imagenAcc17 {
+  background-image: url("../../assets/categorias/Accesorios/accesorios(17).webp");
+}
+
+#imagenMac1 {
+  background-image: url("../../assets/categorias/Macetas/macetas(1).jpg");
+}
+
+#imagenMac2 {
+  background-image: url("../../assets/categorias/Macetas/macetas(2).jpg");
+}
+
+#imagenMac3 {
+  background-image: url("../../assets/categorias/Macetas/macetas(3).jpg");
+}
+
+#imagenMac4 {
+  background-image: url("../../assets/categorias/Macetas/macetas(4).jpg");
+}
+
+#imagenMac5 {
+  background-image: url("../../assets/categorias/Macetas/macetas(5).jpg");
+}
+
+#imagenMac6 {
+  background-image: url("../../assets/categorias/Macetas/macetas(6).jpg");
+}
+
+#imagenMac7 {
+  background-image: url("../../assets/categorias/Macetas/macetas(7).jpg");
+}
+
+#imagenMac8 {
+  background-image: url("../../assets/categorias/Macetas/macetas(8).jpg");
+}
+
+#imagenMac9 {
+  background-image: url("../../assets/categorias/Macetas/macetas(9).jpg");
+}
+
+#imagenMac10 {
+  background-image: url("../../assets/categorias/Macetas/macetas(10).jpg");
+}
+
+#imagenMac11 {
+  background-image: url("../../assets/categorias/Macetas/macetas(11).jpg");
+}
+
+#imagenMac12 {
+  background-image: url("../../assets/categorias/Macetas/macetas(12).jpg");
+}
+
+#imagenMac13 {
+  background-image: url("../../assets/categorias/Macetas/macetas(13).jpg");
+}
+
+#imagenMac14 {
+  background-image: url("../../assets/categorias/Macetas/macetas(14).jpg");
+}
+
+#imagenMac15 {
+  background-image: url("../../assets/categorias/Macetas/macetas(15).jpg");
+}
+
+#imagenSuc1 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(1).jpg");
+}
+
+#imagenSuc2 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(2).jpg");
+}
+
+#imagenSuc3 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(3).jpg");
+}
+
+#imagenSuc4 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(4).jpg");
+}
+
+#imagenSuc5 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(5).jpg");
+}
+
+#imagenSuc6 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(6).jpg");
+}
+
+#imagenSuc7 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(7).jpg");
+}
+
+#imagenSuc8 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(8).jpg");
+}
+
+#imagenSuc9 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(9).jpg");
+}
+
+#imagenSuc10 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(10).jpg");
+}
+
+#imagenSuc11 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(11).jpg");
+}
+
+#imagenSuc12 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(12).jpg");
+}
+
+#imagenSuc13 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(13).jpg");
+}
+
+#imagenSuc14 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(14).jpg");
+}
+
+#imagenSuc15 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(15).jpg");
+}
+
+#imagenSuc16 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(16).jpg");
+}
+
+#imagenSuc17 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(17).jpg");
+}
+
+#imagenSuc18 {
+  background-image: url("../../assets/categorias/Suculentas/suculentas(18).jpg");
+}
+
+#imagenExt1 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(1).jpg");
+}
+
+#imagenExt2 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(2).jpg");
+}
+
+#imagenExt3 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(3).jpg");
+}
+
+#imagenExt4 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(4).jpg");
+}
+
+#imagenExt5 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(5).jpg");
+}
+
+#imagenExt6 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(6).jpg");
+}
+
+#imagenExt7 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(7).jpg");
+}
+
+#imagenExt8 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(8).jpg");
+}
+
+#imagenExt9 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(9).jpg");
+}
+
+#imagenExt10 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(10).jpg");
+}
+
+#imagenExt11 {
+  background-image: url("../../assets/categorias/PlantasExterior/exterior(11).jpg");
 }
 /*# sourceMappingURL=style.css.map */

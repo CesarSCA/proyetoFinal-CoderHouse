@@ -17,8 +17,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../styles/css/style.css" />
-    <title>Contactanos!</title>
-    <meta name="description" content="Necesitas contactarnos? Puedes hacerlo mediante esta pagina!">
+    <title>El Edén - Seccion de plantas de exterior</title>
+    <meta
+      name="description"
+      content="Necesitas contactarnos? Puedes hacerlo mediante esta pagina!"
+    />
+    <script src="../../scripts/categorias.js"></script>
   </head>
   <body>
     <header class="headerNoIndex">
@@ -26,7 +30,10 @@
         <div class="nav__Logo">
           <div class="nav__Logo__imagen">
             <a href="/index.html"
-              ><img src="../../assets/logopruebas.png" alt="" class="imagen-logo"
+              ><img
+                src="../../assets/logopruebas.png"
+                alt=""
+                class="imagen-logo"
             /></a>
           </div>
           <div class="nav__Logo__span">
@@ -35,7 +42,7 @@
         </div>
         <nav class="nav__navegacion">
           <ul class="nav__navegacion__categoria">
-            <li><a href="/" class="nav__boton"> Inicio </a></li>
+            <li><a href="/index.html" class="nav__boton"> Inicio </a></li>
             <li>
               <a href="../" class="nav__boton"> Productos</a>
             </li>
@@ -44,28 +51,47 @@
         </nav>
       </div>
     </header>
-    <footer>
-        <div class="posicion footer">
-          <ul class="footer__categorias">
-            <li>
-              <a href="#" class="footer__categorias__boton"
-                >Terminos y Condiciones</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__categorias__boton"
-                >Politica de reembolsos</a
-              >
-            </li>
-            <li>
-              <a href="#" class="footer__categorias__boton"
-                >Politica de privacidad</a
-              >
-            </li>
-          </ul>
+    <main class="main">
+      <div class="posicion contenedor">
+        <h1>Plantas del Exterior
+        </h1>
+        <div id="contenedorSubCat">
+          <div id="imagenExt1" class="imagenes"></div>
+          <div id="imagenExt2" class="imagenes"></div>
+          <div id="imagenExt3" class="imagenes"></div>
+          <div id="imagenExt4" class="imagenes"></div>
+          <div id="imagenExt5" class="imagenes"></div>
+          <div id="imagenExt6" class="imagenes"></div>
+          <div id="imagenExt7" class="imagenes"></div>
+          <div id="imagenExt8" class="imagenes"></div>
+          <div id="imagenExt9" class="imagenes"></div>
+          <div id="imagenExt10" class="imagenes"></div>
+          <div id="imagenExt11" class="imagenes"></div>
         </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="scripts.js"></script>
-    </body>
-  </html>
+      </div>
+    </main>
+    <footer>
+      <div class="posicion footer">
+        <ul class="footer__categorias">
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Terminos y Condiciones</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de reembolsos</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__categorias__boton"
+              >Politica de privacidad</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/scripts.js"></script>
+  </body>
+</html>
