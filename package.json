@@ -1,0 +1,24 @@
+{
+  "name": "coderhouse-cesarcastro",
+  "version": "1.0.0",
+  "description": "projecto para el curso de coderhouse",
+  "main": "index.html",
+  "dependencies": {
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "csass": "sass --watch styles/scss/style.scss styles/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarSCA/pruebas.git"
+  },
+  "author": "Cesar castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarSCA/pruebas/issues"
+  },
+  "homepage": "https://github.com/CesarSCA/pruebas#readme"
+}
