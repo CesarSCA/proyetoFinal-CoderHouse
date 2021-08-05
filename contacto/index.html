@@ -19,14 +19,6 @@
     <link rel="stylesheet" href="../styles/css/style.css" />
     <title>Contactanos!</title>
     <meta name="description" content="Necesitas contactarnos? Puedes hacerlo mediante esta pagina!">
-    <style>
-      .medios{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-      }
-    </style>
   </head>
   <body>
     <header class="headerNoIndex">
@@ -34,7 +26,7 @@
         <div class="nav__Logo">
           <div class="nav__Logo__imagen">
             <a href="../index.html"
-              ><img src="assets/logopruebas.png" alt="" class="imagen-logo"
+              ><img src="../assets/logopruebas.png" alt="" class="imagen-logo"
             /></a>
           </div>
           <div class="nav__Logo__span">
@@ -53,56 +45,60 @@
       </div>
     </header>
     <main class="main">
-      <div class="posicion contenedor">
-        <section>
-          <div>
-            <h1>Contacto</h1>
-          </div>
-        </section>
-        <div class="contacto">
-          <div class="conTexto">
-            <p>Deseas contactarnos? Puedes hacerlo por los siguientes medios!</p>
-            <div class="medios">
-              <div class="whats">
-                <p class="contacto__titulo">Whatsapp</p>
-                <a href="#">387 555 333 000</a>
-              </div>
-              <div class="faceb">
-                <p class="contacto__titulo">Facebook</p>
-                <a href="#">El Eden - Pagina</a>
-              </div>
-              <div class="email">
-                <p class="contacto__titulo">Email</p>
-                <a href="#">eleden@gmail.com</a>
-              </div>
+      <div class="posicion contacto__texto">
+        <p>¿Deseas contactarnos? Puedes hacerlo por los siguientes medios:</p>
+        <div class="contenedor-contacto">
+          <div class="caja">
+            <div class="relleno1 relleno"> <img src="../../assets/iconos/telefono.svg" alt=""></div>
+            <div class="contacto">
+                <div class="medios">
+                  <div class="whats medio">
+                    <p class="contacto__titulo">Whatsapp</p>
+                    <a href="#">387 555 333 000</a>
+                  </div>
+                  <div class="faceb medio">
+                    <p class="contacto__titulo">Facebook</p>
+                    <a href="#">El Eden - Pagina</a>
+                  </div>
+                  <div class="email medio">
+                    <p class="contacto__titulo">Email</p>
+                    <a href="#">eleden@gmail.com</a>
+                  </div>
+                </div>
             </div>
-            <p>O puedes enviarnos un mensaje por aqui!</p>
+          </div>
+          <div class="caja caja2">
+            <div class="relleno2 relleno"> <img src="../../assets/iconos/correo-electronico.svg" alt=""> </div>
+            <div class="contacto">
+              <form action="" method="POST">
+                <label for="nombre" class="nombre">Nombre</label>
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder="Escriba su nombre"
+                  required
+                />
+                <label for="correo" class="correo">E-Mail</label>
+                <input
+                  type="text"
+                  name="correo"
+                  id="correo"
+                  placeholder="Escriba su E-Mail"
+                  required
+                />
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <input type="submit" value="ENVIAR" />
+              </form>
+            </div>
           </div>
         </div>
-        <fieldset>
-          <legend>Formulario</legend>
-          <form action="" method="POST">
-            <label for="nombre">Nombre</label>
-            <input
-              type="text"
-              name="nombre"
-              id="nombre"
-              placeholder="Escriba su nombre"
-              required
-            />
-            <br />
-            Mensaje:
-            <br />
-            <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <br />
-            <input type="submit" value="ENVIAR" />
-          </form>
-        </fieldset>
       </div>
     </main>
     <br />
@@ -128,6 +124,6 @@
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="../scripts/scripts.js"></script>
   </body>
 </html>

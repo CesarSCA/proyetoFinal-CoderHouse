@@ -4,6 +4,7 @@
   "description": "projecto para el curso de coderhouse",
   "main": "index.html",
   "dependencies": {
+    "bootstrap": "^5.1.0",
     "sass": "^1.35.2"
   },
   "devDependencies": {},

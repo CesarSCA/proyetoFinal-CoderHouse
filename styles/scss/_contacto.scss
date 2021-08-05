@@ -1,0 +1,131 @@
+.contenedor-contacto{
+    display: flex;
+    width: 100%;
+    padding: 2% 2%;
+}
+.caja{
+    flex: 1;
+    overflow: hidden;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.09);
+    transition: all 300ms;
+}
+.contacto{
+    padding: 2rem;
+}
+.caja .relleno{
+    height: 100%;
+    transition:  all 300ms;
+}
+.caja:hover{
+    flex: 50%;
+}
+.relleno img{
+    height: 50%;
+    transition:  all 300ms;
+}
+.caja:hover .relleno, .caja:hover .relleno img{
+    height: 0%;
+}
+@keyframes vibrar1{
+    10%, 90% {
+   transform: translate3d(-1px, 0, 0);
+   }
+
+   20%, 80% {
+   transform: translate3d(2px, 0, 0);
+   }
+
+   30%, 50%, 70% {
+   transform: translate3d(-4px, 0, 0);
+   }
+
+  40%, 60% {
+   transform: translate3d(4px, 0, 0);
+  }
+
+  }
+  .contacto{
+    opacity: 0;
+  }
+  .caja:hover .contacto{
+    display: flex;
+    opacity: 100%;
+    height: 100%;
+  }
+  .caja{
+    border-radius: 10px;
+  }
+  .relleno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .relleno1{
+    background: rgb(180, 223, 180);
+  }
+  .relleno2{
+    background: #f0f0f0;
+  }
+  .relleno1 img{
+    animation-name: vibrar1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+  }
+  .relleno2 img{
+    animation-name: vibrar1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+  textarea {
+    overflow:auto;
+    resize: none;
+    height: 20vh;
+    width: 96%;
+  }
+
+  .medios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .medio a{
+      margin-left: 0.7rem;
+  }
+  .medio{
+      padding: 2rem;
+      background-color: rgba(231, 231, 231, 0.171);
+      border-radius: 15px;
+  }
+  .contacto__texto > p{
+      text-align: center;
+      margin-bottom: 0;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+  .contacto label, input{
+    display: block;
+}
+
+@media only screen and (max-width: 600px){
+    .contenedor-contacto{
+        flex-direction: column;
+    }
+    .relleno1 img{
+        height: 100px;
+    }
+    .contacto{
+        display: flex;
+        opacity: 100%;
+        height: 100%;
+      }
+}
+@media only screen and (min-width: 601px){
+    .medio{
+        line-height: 1.2rem;
+    }
+}

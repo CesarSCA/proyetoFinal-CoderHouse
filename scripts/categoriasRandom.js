@@ -12,9 +12,9 @@ window.addEventListener("load", function() {
             <span class="vermas"><a href="./categorias/subcategorias/${seleccionadas[index]}.html">ver mas</a></span>
         </div>
         <div class="contenedorIMG">
-        <div class="caja__imagenes"><div id="categoria__${seleccionadas[index]}1" class="categorias__imagenes productos__imagen"></div><div class="precioNombre"><span id="nombre__${seleccionadas[index]}1">Aun sin nombre</span><span id="precio__${seleccionadas[index]}1">$0</span></div></div>
-        <div class="caja__imagenes"><div id="categoria__${seleccionadas[index]}2" class="categorias__imagenes productos__imagen"></div><div class="precioNombre"><span id="nombre__${seleccionadas[index]}2">Aun sin nombre</span><span id="precio__${seleccionadas[index]}2">$0</span></div></div>
-        <div class="caja__imagenes"><div id="categoria__${seleccionadas[index]}3" class="categorias__imagenes productos__imagen"></div><div class="precioNombre"><span id="nombre__${seleccionadas[index]}3">Aun sin nombre</span><span id="precio__${seleccionadas[index]}3">$0</span></div></div>
+        <div class="caja__imagenes"><div id="categoria__${seleccionadas[index]}1" class="categorias__imagenes productos__imagen"></div><div class="precioNombre"><span class="nombresProductos" id="nombre__${seleccionadas[index]}1">Aun sin nombre</span><span class="preciosProductos" id="precio__${seleccionadas[index]}1">$0</span></div></div>
+        <div class="caja__imagenes"><div id="categoria__${seleccionadas[index]}2" class="categorias__imagenes productos__imagen"></div><div class="precioNombre"><span class="nombresProductos" id="nombre__${seleccionadas[index]}2">Aun sin nombre</span><span class="preciosProductos" id="precio__${seleccionadas[index]}2">$0</span></div></div>
+        <div class="caja__imagenes"><div id="categoria__${seleccionadas[index]}3" class="categorias__imagenes productos__imagen"></div><div class="precioNombre"><span class="nombresProductos" id="nombre__${seleccionadas[index]}3">Aun sin nombre</span><span class="preciosProductos" id="precio__${seleccionadas[index]}3">$0</span></div></div>
         </div>
         `
          

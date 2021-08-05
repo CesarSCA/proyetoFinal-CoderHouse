@@ -1,30 +1,35 @@
-.header {
-    color: white;
-    position: relative;
-    
+$navColorNoIndex: rgb(96, 112, 128);
+
+.header a {
+    color: whitesmoke; 
+    text-decoration: none;
+}
+.headerNoIndex a{
+    color: $navColorNoIndex; 
+    text-decoration: none;
+}
+.carousel-control-prev, .carousel-control-next, .carousel-indicators{
+    display: none;
+}
+.carousel-item {
+    background-image: url(../../assets/carrousel/Green-leaves-plants-water-drops_1920x1200.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0.5rem;
+  }
+  .carousel__item--background2 {
+    background-image: url(../../assets/carrousel/listya-rasteniya-16066.jpg);
+  }
+
+  .carousel__item--background3 {
+    background-image: url(../../assets/carrousel/thumb-1920-427274.jpg);
+  }
+
+  .header, .headerNoIndex{
     .nav{
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        right: 0;
-        padding-top: 1.5rem;
         .imagen-logo{
             width: 100px;
             margin-left: 2rem;
-        }
-        .imagen-logo:hover{
-            animation-name: ejemplo;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in;
-            animation-duration: 3s;
-            animation-delay: 0s;
-        }
-        @keyframes ejemplo{
-            0%{ transform: rotate(0deg);}
-            100%{ transform: rotate(360deg);}
-        }
-        .menu-icon{
-            color: whitesmoke;
         }
         .nav__navegacion{
             display: flex;
@@ -32,9 +37,7 @@
             .nav__boton{
                 margin-right: 1rem;
                 padding: 1rem;
-                color: whitesmoke;
                 font-size: 1.8rem;
-                display: flex;
 
                 position: relative;
             }
@@ -43,7 +46,6 @@
                 position: absolute;
                 width: 100%;
                 height: 0.175rem;
-                background: whitesmoke;
                 left: 0;
                 bottom: 0;
                 
@@ -55,9 +57,24 @@
             .nav__boton:hover:after{
                 transform: scale(1,1);
             }
-            
         }
-
+    }
+}
+.header {
+    color: white;
+    position: relative;
+    .nav{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        padding-top: 1.5rem;
+        .menu-icon{
+            color: whitesmoke;
+        }
+        .nav__boton:after{
+            background: whitesmoke;
+        }
     }
     .carousel{
         width: 90%;
@@ -68,56 +85,14 @@
 }
 .headerNoIndex {
     color: $navColorNoIndex;
-    $ejemplo: 3rem;
     position: relative;
     .nav{
-        padding-top: $ejemplo/2;
-        .imagen-logo{
-            width: 100px;
-            margin-left: 2rem;
-        }
-        .imagen-logo:hover{
-            animation-name: ejemplo;
-            animation-iteration-count: infinite;
-            animation-timing-function: ease-in;
-            animation-duration: 3s;
-            animation-delay: 0s;
-        }
-        @keyframes ejemplo{
-            0%{ transform: rotate(0deg);}
-            100%{ transform: rotate(360deg);}
-        }
+        padding-top: 1.5rem;
         .menu-icon{
             color: $navColorNoIndex;
         }
-        .nav__navegacion{
-            display: flex;
-            justify-content: space-between;
-            .nav__boton{
-                margin-right: 1rem;
-                padding: 1rem;
-                color: $navColorNoIndex;
-                font-size: 1.8rem;
-
-                position: relative;
-            }
-            .nav__boton:after{
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 0.175rem;
-                background: $navColorNoIndex;
-                left: 0;
-                bottom: 0;
-                
-            }
-            .nav__boton:after{
-                transform: scale(0, 1);
-                transition: transform 0.3s ease;
-            }
-            .nav__boton:hover:after{
-                transform: scale(1,1);
-            }
+        .nav__boton:after{
+            background: $navColorNoIndex;   
         }
     }
 }
@@ -381,3 +356,13 @@
         }
     }
 }
+@media only screen and (max-width: 600px){
+    .carousel-item{
+      min-height: 40vh;
+    }
+  }
+  @media only screen and (min-width: 601px){
+    .carousel-item{
+      min-height: 30vh;
+    }
+  }

@@ -7,14 +7,12 @@
     border-radius: 2rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     .titulo{
-        font-size: 80px;
         line-height: 1;
         margin-bottom: 0;
         text-align: center;
     }
     .subtitulo{
         font-family: 'Italianno', cursive;
-        font-size: 40px;
         margin-bottom: 2rem;
         text-align: center;
     }
@@ -27,6 +25,25 @@
         color: green;
         margin-bottom: 0.5rem;
     }
+    .categorias__imagenes{
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem;
+      }
+      .contenedorIMG{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .productos__categorias{
+        display: flex;
+        flex-direction: column;
+      }
+      .presentacion{
+        text-align: center;
+      }
     .productos__categorias h2{
         padding: 1rem;
         padding-left: 0;
@@ -49,9 +66,10 @@
         width: 30%;
         max-width: 240px;
         max-height: 272px;
+        cursor: pointer;
     }
     .caja__imagenes:hover{
-        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         z-index: 2;
@@ -72,7 +90,7 @@
     .caja__imagenes:hover .precioNombre{
         display: flex;
         position: absolute;
-        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
         z-index: -1;
         width: 100%;
         background: white;
@@ -85,16 +103,30 @@
         animation-duration: 0.3s;
         animation-delay: 0s;
         flex-direction: column;
+        line-height: 1.2em;
+        font-size: 1.4rem;
 
     }
     .caja__imagenes:hover .categorias__imagenes{
-        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .preciosProductos{
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+        color: forestgreen;
+        font-size: 1.2rem;
     }
 }
 
 @media only screen and (max-width: 600px){
+    .titulo{
+        font-size: 60px;
+    }
+    .subtitulo{
+        font-size: 42px;
+    }
     .texto{
-        font-size: 15px;
+        font-size: 19px;
     }
     .caja__imagenes:hover .precioNombre{
         padding-left: 0.9rem;
@@ -104,10 +136,17 @@
     
 }
 @media only screen and (min-width: 601px){
+    .titulo{
+        font-size: 80px;
+    }
+    .subtitulo{
+        font-size: 44px;
+    }
     .texto{
         font-size: 25px;
     }
     .caja__imagenes:hover .precioNombre{
-        padding-left: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1rem;
     }
 }

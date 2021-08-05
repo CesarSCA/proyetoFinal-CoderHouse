@@ -1,3 +1,47 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer .footer__categorias__boton:hover {
+    color: rgba(51, 51, 51, 0.322) !important; 
+    text-decoration: none;
+}
+.footer .autor:hover {
+    color: rgba(51, 51, 51) !important; 
+    text-decoration: none;
+}
+@mixin footer_boton ($color) {
+    color: $color;
+    position: relative;
+    padding: 5px;
+}
+@mixin footer_boton--after ($color1) {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.175rem;
+    background: $color1;
+    left: 0;
+    bottom: 0;
+}
+.autor{
+    @include footer_boton ($fuente-color);
+    align-self: center;
+    background-color: white;
+    padding: 0.6rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+.autor::after{
+    @include footer_boton--after ($fuente-color);
+}
+.autor:after{
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+.autor:hover:after{
+    transform: scale(1,1);
+}
 .footer__categorias{
     display: flex;
     flex-direction: row;
@@ -7,18 +51,10 @@
     padding: 2rem;
     margin-top: 5rem;
     .footer__categorias__boton{
-        color: rgba(51, 51, 51, 0.322);
-        position: relative;
-        padding: 5px;
+        @include footer_boton (rgba(51, 51, 51, 0.322));
     }
     .footer__categorias__boton:after{
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 0.175rem;
-        background: rgba(51, 51, 51, 0.322);
-        left: 0;
-        bottom: 0;
+        @include footer_boton--after (rgba(51, 51, 51, 0.322));
     }
     .footer__categorias__boton:after{
         transform: scale(0, 1);
