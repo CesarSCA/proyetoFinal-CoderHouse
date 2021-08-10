@@ -11992,6 +11992,7 @@ textarea {
   resize: none;
   height: 20vh;
   width: 96%;
+  max-width: 70vw;
 }
 
 .medios {

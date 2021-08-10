@@ -277,6 +277,7 @@ $navColorNoIndex: rgb(96, 112, 128);
             .nav__navegacion.show{
                 display: flex;
                 position: absolute;
+                z-index: 1;
                 width: 100%;
                 height: 40vh;
                 animation-name: bajar;
