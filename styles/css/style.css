@@ -11627,89 +11627,7 @@ a {
 .contenedor .categorias__imagenes {
   background-position: center;
   background-size: cover;
-  height: 100%;
-  width: 100%;
   border-radius: 1rem;
-}
-.contenedor .contenedorIMG {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.contenedor .productos__categorias {
-  display: flex;
-  flex-direction: column;
-}
-.contenedor .presentacion {
-  text-align: center;
-}
-.contenedor .productos__categorias h2, .contenedor .productos__categorias .h2 {
-  padding: 1rem;
-  padding-left: 0;
-}
-.contenedor .productos__categorias .vermas {
-  padding: 1rem;
-  padding-left: 0;
-  font-size: 1.3rem;
-}
-.contenedor .caja__imagenes {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: box-shadow, transform;
-  transition-property: box-shadow, transform;
-  border-radius: 1rem;
-  position: relative;
-  height: 47vh;
-  width: 30%;
-  max-width: 240px;
-  max-height: 272px;
-  cursor: pointer;
-}
-.contenedor .caja__imagenes:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-  z-index: 2;
-}
-.contenedor .caja__imagenes .precioNombre {
-  display: none;
-}
-@keyframes bbajar {
-  from {
-    transform: translate(0, -6rem);
-  }
-  to {
-    transform: translate(0, -2.5rem);
-  }
-}
-.contenedor .caja__imagenes:hover .precioNombre {
-  display: flex;
-  position: absolute;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  z-index: -1;
-  width: 100%;
-  background: white;
-  padding-top: 3rem;
-  transform: translate(0, -2.5rem);
-  border-radius: 1rem;
-  animation-name: bbajar;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.3s;
-  animation-delay: 0s;
-  flex-direction: column;
-  line-height: 1.2em;
-  font-size: 1.4rem;
-}
-.contenedor .caja__imagenes:hover .categorias__imagenes {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.contenedor .preciosProductos {
-  padding-top: 0.5rem;
-  padding-bottom: 0.7rem;
-  color: forestgreen;
-  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -11721,14 +11639,53 @@ a {
     font-size: 42px;
   }
 
-  .texto {
-    font-size: 19px;
-  }
-
   .caja__imagenes:hover .precioNombre {
     padding-left: 0.9rem;
     font-size: 20px;
     line-height: 1.6rem;
+  }
+
+  .contenedorIMG {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .caja__imagenes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .categorias__imagenes {
+    height: 25vh;
+    width: 25vw;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .precioNombre {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+
+  .titulo__productos {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .titulo__productos a {
+    margin-left: 1rem;
+    font-size: 20px;
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 1.3rem;
+  }
+
+  .preciosProductos {
+    color: forestgreen;
   }
 }
 @media only screen and (min-width: 601px) {
@@ -11747,6 +11704,102 @@ a {
   .caja__imagenes:hover .precioNombre {
     padding-left: 1.5rem;
     padding-right: 1rem;
+  }
+
+  .contenedorIMG {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .productos__categorias {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .presentacion {
+    text-align: center;
+  }
+
+  .productos__categorias h2, .productos__categorias .h2 {
+    padding: 1rem;
+    padding-left: 0;
+  }
+
+  .productos__categorias .vermas {
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 1.3rem;
+  }
+
+  .caja__imagenes {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    border-radius: 1rem;
+    position: relative;
+    height: 47vh;
+    width: 30%;
+    max-width: 240px;
+    max-height: 272px;
+    cursor: pointer;
+  }
+
+  .caja__imagenes:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 2;
+  }
+
+  .caja__imagenes .precioNombre {
+    display: none;
+  }
+
+  @keyframes bbajar {
+    from {
+      transform: translate(0, -6rem);
+    }
+    to {
+      transform: translate(0, -2.5rem);
+    }
+  }
+  .caja__imagenes:hover .precioNombre {
+    display: flex;
+    position: absolute;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    width: 100%;
+    background: white;
+    padding-top: 3rem;
+    transform: translate(0, -2.5rem);
+    border-radius: 1rem;
+    animation-name: bbajar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+    animation-delay: 0s;
+    flex-direction: column;
+    line-height: 1.2em;
+    font-size: 1.4rem;
+  }
+
+  .caja__imagenes:hover .categorias__imagenes {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .preciosProductos {
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+    color: forestgreen;
+    font-size: 1.2rem;
+  }
+
+  .categorias__imagenes {
+    height: 100%;
+    width: 100%;
   }
 }
 .categorias > div:hover {

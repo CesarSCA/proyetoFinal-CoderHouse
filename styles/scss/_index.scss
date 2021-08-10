@@ -28,11 +28,77 @@
     .categorias__imagenes{
         background-position: center;
         background-size: cover;
-        height: 100%;
-        width: 100%;
         border-radius: 1rem;
-      }
-      .contenedorIMG{
+    }
+
+      
+}
+
+@media only screen and (max-width: 600px){
+    .titulo{
+        font-size: 60px;
+    }
+    .subtitulo{
+        font-size: 42px;
+    }
+    .caja__imagenes:hover .precioNombre{
+        padding-left: 0.9rem;
+        font-size: 20px;
+        line-height: 1.6rem;
+    }
+    .contenedorIMG{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .caja__imagenes{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .categorias__imagenes{
+        height: 25vh;
+        width: 25vw;
+        margin-bottom: 1rem;
+        margin-right: 0.5rem;
+    }
+    .precioNombre{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .titulo__productos{
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .titulo__productos a{
+        margin-left: 1rem;
+        font-size: 20px;
+        padding: 1rem;
+        padding-left: 0;
+        font-size: 1.3rem;
+    }
+    .preciosProductos{
+        color: forestgreen;
+    }
+}
+@media only screen and (min-width: 601px){
+    .titulo{
+        font-size: 80px;
+    }
+    .subtitulo{
+        font-size: 44px;
+    }
+    .texto{
+        font-size: 25px;
+    }
+    .caja__imagenes:hover .precioNombre{
+        padding-left: 1.5rem;
+        padding-right: 1rem;
+    }
+    .contenedorIMG{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -116,37 +182,8 @@
         color: forestgreen;
         font-size: 1.2rem;
     }
-}
-
-@media only screen and (max-width: 600px){
-    .titulo{
-        font-size: 60px;
-    }
-    .subtitulo{
-        font-size: 42px;
-    }
-    .texto{
-        font-size: 19px;
-    }
-    .caja__imagenes:hover .precioNombre{
-        padding-left: 0.9rem;
-        font-size: 20px;
-        line-height: 1.6rem;
-    }
-    
-}
-@media only screen and (min-width: 601px){
-    .titulo{
-        font-size: 80px;
-    }
-    .subtitulo{
-        font-size: 44px;
-    }
-    .texto{
-        font-size: 25px;
-    }
-    .caja__imagenes:hover .precioNombre{
-        padding-left: 1.5rem;
-        padding-right: 1rem;
+    .categorias__imagenes{
+        height: 100%;
+        width: 100%;
     }
 }
